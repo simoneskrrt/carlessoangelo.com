@@ -1,0 +1,142 @@
+:root {
+    --black: #1B1F1D;
+    --black75: #545755;
+    --black50: #8D8F8E;
+    --light: 300;
+    --regular: 400;
+    --semibold: 600;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.mobile {display: none;}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+}
+
+.key {
+    position: relative;
+    border: 1px solid var(--black);
+    width: 380px;
+    height: 161px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
+}
+
+.bottom {
+    display: flex;
+    gap: 50px;
+}
+
+.key .h5 {
+    position: absolute;
+    bottom: 16px;
+    right: 32px;
+}
+
+.up {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.side {
+    border-radius: 50px;
+}
+
+.down {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.text {margin-bottom: 32px;}
+
+.footer-bottom {margin-top: 0;}
+
+footer {margin-top: 0;}
+
+.menu {margin-bottom: 32px;}
+
+.h3-landing {
+    font-family: Montserrat, sans-serif;
+    font-size: 31px;
+    font-weight: var(--light);
+    color: var(--black);
+}
+
+.h2-landing {
+    font-family: Montserrat, sans-serif;
+    font-size: 39px;
+    font-weight: var(--semibold);
+    color: var(--black);
+}
+
+@media only screen and (max-width: 1250px) {
+    .keyboard {
+        scale: 0.90;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .keyboard {
+        scale: 0.80;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .keyboard {
+        scale: 0.75;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .keyboard {
+        scale: 0.70;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .keyboard {
+        scale: 0.58;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .h3-landing {font-size: 23px;}
+
+    .h2-landing {font-size: 29px;}
+
+    .desktop {display: none;}
+
+    .mobile {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    .key {
+        border-radius: 0;
+        width: 50%;
+    }
+
+    .key:first-child {
+        border-right: 0px;
+        border-bottom: 0px;
+    }
+
+    .key:last-child {
+        border-left: 0px;
+        border-top: 0px;
+    }
+
+}

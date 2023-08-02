@@ -1,0 +1,31 @@
+a {
+    width: min-content;
+}
+
+.contacts {
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.button {
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 16px 24px;
+    border: 1px solid var(--black);
+    border-radius: 50px;
+    width: min-content;
+}
+
+.footer-contact {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-contact {width: max-content;}
+    .button {padding: 8px 16px;}
+}
