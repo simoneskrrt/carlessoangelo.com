@@ -2,6 +2,10 @@ a {
     width: min-content;
 }
 
+.button p {
+    width: max-content;
+}
+
 .contacts {
     margin-top: 56px;
     display: flex;

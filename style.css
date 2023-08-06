@@ -233,6 +233,7 @@ header {
     color: var(--black);
     transform: translateX(-110px);
     gap: 16px;
+    margin-bottom: 8px;
 }
 
 @media only screen and (max-width: 768px) {
